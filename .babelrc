@@ -1,0 +1,16 @@
+{
+  "env": {
+    "production": {
+      "presets": ["@babel/preset-env", "@babel/typescript", "@babel/react"],
+      "plugins": ["@babel/proposal-class-properties", "@babel/proposal-object-rest-spread", "styled-jsx/babel", "@babel/transform-runtime"]
+    },
+    "development": {
+      "presets": ["@babel/preset-env", "@babel/typescript", "@babel/react"],
+      "plugins": ["@babel/proposal-class-properties", "@babel/proposal-object-rest-spread", "styled-jsx/babel", "@babel/transform-runtime"]
+    },
+    "test": {
+      "presets": ["@babel/preset-env", "@babel/typescript", "@babel/react"],
+      "plugins": ["@babel/proposal-class-properties", "@babel/proposal-object-rest-spread", "styled-jsx/babel-test", "@babel/transform-runtime"]
+    }
+  }
+}
