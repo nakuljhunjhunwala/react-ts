@@ -3,14 +3,12 @@ import React from 'react';
 import cn from 'classnames';
 import styles from './style';
 
-const Button = ({ fullWidth, primary, secondary, children, onClick, className }: IProps): JSX.Element => (
+const Button = ({ primary,size, children, onClick, className,letterCase }: IProps): JSX.Element => (
   <>
     <button
       onClick={onClick}
-      className={cn('button', className, {
-        'button--full-width': fullWidth,
-        'button--secondary': secondary,
-        'button--primary': primary,
+      className={cn('button', className, size,letterCase,{
+        primary,
       })}
     >
       {children}
